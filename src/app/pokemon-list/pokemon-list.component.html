@@ -1,0 +1,15 @@
+<div class="pokemon-grid">
+    <div class="box" *ngFor="let pokemon of pokemons">
+        <img [src]="pokemon.sprites.front_default" alt="">
+        <h3>{{pokemon.name}}</h3>
+        <p>
+            <b>Tipo:</b> {{pokemon.types[0].type.name}}
+        </p>
+        <p>
+            <b>Vida:</b> {{pokemon.stats[0].base_stat}} hp 
+        </p>
+        <p>
+            <b>Ataque:</b> {{pokemon.stats[1].base_stat}} 
+        </p>
+    </div>
+</div>
